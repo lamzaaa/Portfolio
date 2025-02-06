@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+@config '../tailwind.config.js';
+@import 'tailwindcss';
+
+@layer components {
+	.container {
+		@apply mx-auto w-full px-5;
+		@apply xl:max-w-[1440px];
+	}
+}
+
+@theme {
+	--color-background: #121112;
+	--color-primary: #9b773d;
+	--color-secondary: #615545;
+	--color-tertiary: #646263;
+	--color-quaternary: #444243;
+	--font-sans: 'Sour Gummy', serif;
+}
+
+body {
+	@apply font-sans;
+}
+:root {
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	@apply bg-background;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}
