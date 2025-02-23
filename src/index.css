@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @config '../tailwind.config.js';
 @import 'tailwindcss';
@@ -8,15 +8,47 @@
 		@apply mx-auto w-full px-5;
 		@apply xl:max-w-[1440px];
 	}
+	.block-title {
+		@apply text-3xl font-bold uppercase;
+		@apply transition-all duration-500;
+	}
+	.section {
+		@apply xl:py-20 py-14;
+	}
+	*:focus-within {
+		outline: 0;
+	}
+}
+@layer utilities {
+	[class*='ratio-'] {
+		@apply relative h-0 block overflow-hidden;
+	}
+	[class*='ratio-'] img,
+	[class*='ratio-'] iframe,
+	[class*='ratio-'] video,
+	[class*='ratio-'] .ratio-frame,
+	[class*='ratio-'] picture {
+		@apply object-cover;
+		@apply transition-all absolute top-0 left-0 w-full h-full;
+	}
+	[class*='ratio-contain'] img,
+	[class*='ratio-contain'] video,
+	[class*='ratio-contain'] picture {
+		@apply object-contain;
+	}
+	[class*='ratio-'] iframe {
+		@apply object-none;
+	}
 }
 
 @theme {
-	--color-background: #121112;
-	--color-primary: #9b773d;
-	--color-secondary: #615545;
-	--color-tertiary: #646263;
-	--color-quaternary: #444243;
-	--font-sans: 'Sour Gummy', serif;
+	--color-transparent: transparent;
+	--color-background: #1a1a1d;
+	--color-primary: #222831;
+	--color-secondary: #31363f;
+	--color-tertiary: #76abae;
+	--color-neutral-100: #eeeeee;
+	--font-sans: 'Poppins', serif;
 }
 
 body {
@@ -24,8 +56,9 @@ body {
 }
 :root {
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	@apply bg-background;
+	background-image: url('./assets/background.png');
+	background-size: 6vw;
+	@apply bg-background text-white bg-repeat bg-blend-multiply;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -44,4 +77,44 @@ body {
 	button {
 		background-color: #f9f9f9;
 	}
+}
+header:before {
+	content: '';
+	background-color: transparent;
+	background-image: radial-gradient(transparent 1px, rgb(15, 17, 21) 1px);
+	background-size: 4px 4px;
+	backdrop-filter: blur(3px);
+	mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+	opacity: 1;
+	@apply absolute inset-0 transition-all duration-300 opacity-0;
+}
+header.active:before {
+	@apply opacity-100;
+}
+
+header nav a {
+	@apply block text-neutral-100 transition-all;
+	@apply relative;
+}
+header nav a::before {
+	content: '';
+	@apply absolute bottom-0 w-0 left-0 h-0.5 bg-white transition-all duration-300;
+}
+header nav li:hover a::before {
+	@apply w-full;
+}
+header nav a::before {
+	@apply absolute bottom-0 w-0 left-0 h-0.5 bg-white;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.popup-content.popup-content {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	@apply max-w-[680px] w-full px-5;
 }

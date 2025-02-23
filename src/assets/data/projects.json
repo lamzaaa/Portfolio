@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "title": "Pizza Company",
+        "role": "Frontend",
+        "description": "A website for selling pizza, one of the most popular pizza in Vietnam.",
+        "link": "https://thepizzacompany.vn/",
+        "image": "/logos/pizzacompany.png",
+        "technology": [
+            ".Net",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "BetaGroup",
+        "role": "Frontend",
+        "description": "Beta Group began with Beta Cinemas – a modern, youthful, and affordable cinema chain, delivering authentic movie experiences to everyone.",
+        "link": "https://thepizzacompany.vn/",
+        "image": "/logos/betagroup.svg",
+        "technology": [
+            ".Net",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Lamia BaoLoc",
+        "role": "FullStack",
+        "description": "Estate introducion",
+        "link": "https://lamiabaoloc.vn/",
+        "image": "/logos/lamiabaoloc.svg",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Lighthouse Capital",
+        "role": "FullStack",
+        "description": "One of Vietnam's first licensed fund management companies.",
+        "link": "https://lighthousecapital.com.vn/",
+        "image": "/logos/lhc.svg",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Doctor 247",
+        "role": "FullStack",
+        "description": "Doctor247 is a licensed social media platform providing trusted health and wellness news to empower individuals in making informed lifestyle and healthcare decisions. While our content is not a substitute for medical diagnosis or treatment, it serves as a valuable resource, fostering a healthier and more aware community.",
+        "link": "https://doctor247.vn/",
+        "image": "/logos/doctor247.svg",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "AnPhuoc App | Website",
+        "role": "Frontend",
+        "task": "<ul><li>Developed UI from Figma</li> <li>Integrated with backend API</li></ul>",
+        "description": "AN PHƯỚC is a premium Vietnamese fashion brand offering sophisticated apparel for men and women, from office wear to casual outfits, including suits, shirts, trousers, and accessories. In collaboration with PIERRE CARDIN, the brand delivers luxurious designs crafted from high-quality materials.",
+        "link": [
+            {
+                "name": "App Store",
+                "url": "https://apps.apple.com/vn/app/an-ph%C6%B0%E1%BB%9Bc/id6740868918"
+            },
+            {
+                "name": "Play Store",
+                "url": "https://play.google.com/store/apps/details?id=com.anphuocstore.app&pcampaignid=web_share"
+            },
+            {
+                "name": "Website",
+                "url": "https://anphuoc.com.vn/"
+            }
+        ],
+        "image": "/logos/anphuoc.png",
+        "technology": [
+            "React Native",
+            "Typescript",
+            "Zustand",
+            "TanStack Query",
+            "Obytes App Template"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "CyberLogitec",
+        "description": "<p>CyberLogitec Vietnam is a trusted Off-shore Development Center (ODC) with over 14 years of expertise in delivering IT outsourcing services for shipping, terminal, logistics, and factory operations. Serving global clients across 10+ countries, we specialize in software development, quality assurance, and global service desk solutions, ensuring stable, high-performance outcomes through advanced resource management and innovative technology.</p> <p>Driven by visionary thinking and cutting-edge tech, we excel in emerging fields like machine learning, computer vision, chatbots, web, mobile, and virtual reality, empowering businesses with transformative IT solutions.</p>",
+        "role": "FullStack",
+        "link": "https://cyberlogitec.com.vn/",
+        "image": "/logos/cyber.png",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Movemee",
+        "role": "Frontend",
+        "description": "Search and Booking Room Service",
+        "link": "https://movemee.vn/",
+        "image": "/logos/movemee.svg",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Arena - Multimedia",
+        "role": "Frontend",
+        "description": "Arena Multimedia is the largest creative community with in-depth and methodical training.",
+        "link": "https://arena.webcanhcam.vn/",
+        "image": "/logos/arena-multimedia.svg",
+        "technology": [
+            "Wordpress",
+            "HTML/CSS/JS"
+        ]
+    }
+]

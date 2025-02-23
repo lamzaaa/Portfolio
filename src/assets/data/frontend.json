@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Wordpress",
+        "icon": "/technology/wordpress.svg"
+    },
+    {
+        "name": "React",
+        "icon": "/technology/react.svg"
+    },
+    {
+        "name": "React Native",
+        "icon": "/technology/reactnative.svg"
+    },
+    {
+        "name": "Typescript",
+        "icon": "/technology/typescript.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "/technology/tailwind.svg"
+    },
+    {
+        "name": "Pug",
+        "icon": "/technology/pug.svg"
+    },
+    {
+        "name": "SASS",
+        "icon": "/technology/sass.svg"
+    },
+    {
+        "name": "HTML5",
+        "icon": "/technology/html.svg"
+    },
+    {
+        "name": "CSS3",
+        "icon": "/technology/css.svg"
+    }
+]

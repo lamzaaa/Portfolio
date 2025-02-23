@@ -1,0 +1,14 @@
+[
+    {
+        "name": "GitHub",
+        "icon": "/technology/github.svg"
+    },
+    {
+        "name": "Figma",
+        "icon": "/technology/figma.svg"
+    },
+    {
+        "name": "VSCode",
+        "icon": "/technology/vscode.svg"
+    }
+]
