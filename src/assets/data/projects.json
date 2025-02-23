@@ -5,7 +5,7 @@
         "role": "Frontend",
         "description": "A website for selling pizza, one of the most popular pizza in Vietnam.",
         "link": "https://thepizzacompany.vn/",
-        "image": "/logos/pizzacompany.png",
+        "image": "./logos/pizzacompany.png",
         "technology": [
             ".Net",
             "HTML/CSS/JS"
@@ -17,7 +17,7 @@
         "role": "Frontend",
         "description": "Beta Group began with Beta Cinemas – a modern, youthful, and affordable cinema chain, delivering authentic movie experiences to everyone.",
         "link": "https://thepizzacompany.vn/",
-        "image": "/logos/betagroup.svg",
+        "image": "./logos/betagroup.svg",
         "technology": [
             ".Net",
             "HTML/CSS/JS"
@@ -29,7 +29,7 @@
         "role": "FullStack",
         "description": "Estate introducion",
         "link": "https://lamiabaoloc.vn/",
-        "image": "/logos/lamiabaoloc.svg",
+        "image": "./logos/lamiabaoloc.svg",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
@@ -41,7 +41,7 @@
         "role": "FullStack",
         "description": "One of Vietnam's first licensed fund management companies.",
         "link": "https://lighthousecapital.com.vn/",
-        "image": "/logos/lhc.svg",
+        "image": "./logos/lhc.svg",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
@@ -53,7 +53,7 @@
         "role": "FullStack",
         "description": "Doctor247 is a licensed social media platform providing trusted health and wellness news to empower individuals in making informed lifestyle and healthcare decisions. While our content is not a substitute for medical diagnosis or treatment, it serves as a valuable resource, fostering a healthier and more aware community.",
         "link": "https://doctor247.vn/",
-        "image": "/logos/doctor247.svg",
+        "image": "./logos/doctor247.svg",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
@@ -79,7 +79,7 @@
                 "url": "https://anphuoc.com.vn/"
             }
         ],
-        "image": "/logos/anphuoc.png",
+        "image": "./logos/anphuoc.png",
         "technology": [
             "React Native",
             "Typescript",
@@ -94,7 +94,7 @@
         "description": "<p>CyberLogitec Vietnam is a trusted Off-shore Development Center (ODC) with over 14 years of expertise in delivering IT outsourcing services for shipping, terminal, logistics, and factory operations. Serving global clients across 10+ countries, we specialize in software development, quality assurance, and global service desk solutions, ensuring stable, high-performance outcomes through advanced resource management and innovative technology.</p> <p>Driven by visionary thinking and cutting-edge tech, we excel in emerging fields like machine learning, computer vision, chatbots, web, mobile, and virtual reality, empowering businesses with transformative IT solutions.</p>",
         "role": "FullStack",
         "link": "https://cyberlogitec.com.vn/",
-        "image": "/logos/cyber.png",
+        "image": "./logos/cyber.png",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
@@ -106,7 +106,7 @@
         "role": "Frontend",
         "description": "Search and Booking Room Service",
         "link": "https://movemee.vn/",
-        "image": "/logos/movemee.svg",
+        "image": "./logos/movemee.svg",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
@@ -118,7 +118,7 @@
         "role": "Frontend",
         "description": "Arena Multimedia is the largest creative community with in-depth and methodical training.",
         "link": "https://arena.webcanhcam.vn/",
-        "image": "/logos/arena-multimedia.svg",
+        "image": "./logos/arena-multimedia.svg",
         "technology": [
             "Wordpress",
             "HTML/CSS/JS"
