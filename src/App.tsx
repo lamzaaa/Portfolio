@@ -6,6 +6,8 @@ import { useEffect, useRef } from 'react';
 import { cancelFrame, frame } from 'motion/react';
 import SectionContact from './components/Contact';
 import SectionSkills from './components/skills/Skill';
+import BlockContainer from './components/UI/BlockContainer';
+import SectionExperience from './components/experiences/Experience';
 
 function App() {
 	// const lenis = useLenis();
@@ -23,9 +25,11 @@ function App() {
 
 	return (
 		<ReactLenis root>
+			<BlockContainer />
 			<Header />
 			<main>
 				<SectionOverview />
+				<SectionExperience />
 				<SectionSkills />
 				<SectionProjects />
 				<SectionContact />

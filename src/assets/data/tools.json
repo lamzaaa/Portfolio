@@ -10,5 +10,9 @@
     {
         "name": "VSCode",
         "icon": "./technology/vscode.svg"
+    },
+    {
+        "name": "Postman",
+        "icon": "./technology/postman.svg"
     }
 ]

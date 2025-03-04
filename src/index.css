@@ -8,15 +8,17 @@
 		@apply mx-auto w-full px-5;
 		@apply xl:max-w-[1440px];
 	}
-	.block-title {
-		@apply text-3xl font-bold uppercase;
-		@apply transition-all duration-500;
-	}
+
 	.section {
 		@apply xl:py-20 py-14;
 	}
 	*:focus-within {
 		outline: 0;
+	}
+
+	.block-title {
+		@apply text-3xl font-bold uppercase;
+		@apply transition-all duration-500;
 	}
 }
 @layer utilities {
@@ -55,7 +57,7 @@ body {
 	@apply font-sans;
 }
 :root {
-	color-scheme: light dark;
+	/* color-scheme: light dark; */
 	background-image: url('./assets/background.png');
 	background-size: 6vw;
 	@apply bg-background text-white bg-repeat bg-blend-multiply;
@@ -65,7 +67,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+/* 
 @media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;
@@ -77,7 +79,7 @@ body {
 	button {
 		background-color: #f9f9f9;
 	}
-}
+} */
 header:before {
 	content: '';
 	background-color: transparent;
@@ -117,4 +119,25 @@ header nav a::before {
 	padding: 0;
 	background-color: transparent;
 	@apply max-w-[680px] w-full px-5;
+}
+
+.block-container {
+	@apply fixed inset-0 w-screen h-screen overflow-hidden -z-1;
+}
+
+#block {
+	@apply w-[105vw] h-screen overflow-hidden;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 50px);
+}
+
+.block-item {
+	@apply size-[50px];
+	border: 0.5px solid rgba(255, 255, 255, 0.02);
+}
+
+.highlight {
+	/* box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.05); */
+	@apply border-tertiary/40;
+	@apply -xl:hidden;
 }

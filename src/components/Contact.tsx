@@ -8,10 +8,10 @@ export default function SectionContact() {
 				<div className="description text-center mt-5">
 					Have a question or want to work together? Mail me at{' '}
 					<a
-						href="mailto:lamzaaa@yahoo.com"
+						href="mailto:thanhlam1201.work@gmail.com"
 						className="bg-background font-bold text-white inline-block p-1 rounded-sm"
 					>
-						lamzaaa@yahoo.com
+						thanhlam1201.work@gmail.com
 					</a>
 				</div>
 			</div>

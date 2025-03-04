@@ -14,6 +14,9 @@ module.exports = {
 				'-sm': {
 					max: '575.98px',
 				},
+				'-xl': {
+					max: '1199.98px',
+				},
 			},
 		},
 	},

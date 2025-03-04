@@ -11,6 +11,10 @@ const menuData = [
 		href: '#about',
 	},
 	{
+		label: 'Experience',
+		href: '#experience',
+	},
+	{
 		label: 'Skills',
 		href: '#skills',
 	},
@@ -77,6 +81,8 @@ function Header() {
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
+
+	const domain = new URL(window.location.href);
 	// use
 	return (
 		<>
@@ -94,7 +100,7 @@ function Header() {
 							}`}
 						>
 							<a
-								href="/"
+								href={domain.href}
 								className="text-3xl font-bold [&_svg]:w-full [&_svg]:h-auto [&_svg]:rounded-xl"
 							>
 								<Logo

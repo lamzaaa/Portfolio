@@ -13,6 +13,7 @@ export function AnimateTitle({
 	const containerRef = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: containerRef,
+		offset: ['start center', 'end end'],
 	});
 
 	const titleRef = useRef<HTMLHeadingElement>(null);
@@ -57,7 +58,7 @@ export function AnimateTitle({
 	}, [containerRef.current]); // Only need to observe container changes
 
 	return (
-		<motion.div ref={containerRef}>
+		<motion.div ref={containerRef} className="container-ref">
 			{title && (
 				<div className="block-title" ref={titleRef}>
 					<h2>
@@ -68,24 +69,25 @@ export function AnimateTitle({
 								const letterIndexReversed = Math.abs(
 									Number(totalTitles - 1 - countIndex)
 								);
+
 								const opacity = useTransform(
 									scrollYProgress,
-									[0.5, 0.5 + letterIndexReversed * 0.05],
+									[0, 0.5 + letterIndexReversed * 0.05],
 									[1, 0]
 								);
 								const x = useTransform(
 									scrollYProgress,
-									[0.5, 0.5 + letterIndexReversed * 0.05],
+									[0, 0.5 + letterIndexReversed * 0.05],
 									[0, 40]
 								);
 								const scaleY = useTransform(
 									scrollYProgress,
-									[0.5, 0.5 + letterIndexReversed * 0.05],
+									[0, 0.5 + letterIndexReversed * 0.05],
 									[1, 0.1]
 								);
 								const color = useTransform(
 									scrollYProgress,
-									[0.5, 0.5 + letterIndexReversed * 0.05],
+									[0, 0.5 + letterIndexReversed * 0.05],
 									['#76abae', '#fff']
 								);
 								return (

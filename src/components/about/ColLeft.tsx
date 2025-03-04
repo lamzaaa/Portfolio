@@ -8,10 +8,6 @@ export default function ColLeft() {
 	// const scaleTransform = useParallax([0, 1], [1, 0.9]);
 	return (
 		<motion.div
-			// initial={{ opacity: 0 }}
-			// whileInView={{
-			// 	opacity: 1,
-			// }}
 			transition={{
 				delay: 0.5,
 			}}
@@ -22,32 +18,32 @@ export default function ColLeft() {
 			}}
 			className="col-left"
 		>
-			<div className="text-xl font-bold sm:block-title">
+			<div className="-sm:text-xl font-bold block-title">
 				<h1 className="inline-flex">
 					Hello, I'm{' '}
 					<div className="text-tertiary ml-[0.5ch] overflow-hidden">
 						{/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
 						{/* @ts-ignore */}
-						<SplitText
-							LetterWrapper={({ children, countIndex }) => (
-								<motion.span
-									className="wrapper inline-block"
-									initial={{ opacity: 0, x: 30, scaleY: 0.1, rotate: 10 }}
-									whileInView={{ opacity: 1, x: 0, scaleY: 1, rotate: 0 }}
-									viewport={{
-										once: true,
-									}}
-									transition={{
-										duration: 0.5,
-										delay: countIndex * 0.05,
-									}}
-								>
-									{children}
-								</motion.span>
-							)}
-						>
-							Thanh Lam
-						</SplitText>
+						{[...'Thanh Lam'].map((char, index) => (
+							<motion.span
+								key={`${char}-${index}`}
+								className="wrapper inline-block"
+								initial={{ opacity: 0, x: 30, scaleY: 0.1, rotate: 10 }}
+								animate={{
+									opacity: 1,
+									x: 0,
+									scaleY: 1,
+									rotate: 0,
+								}}
+								transition={{
+									duration: 0.5,
+									delay: index * 0.05,
+									ease: 'easeOut',
+								}}
+							>
+								{char === ' ' ? '\u00A0' : char}
+							</motion.span>
+						))}
 					</div>
 				</h1>
 			</div>
